@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+Route::get('/', [PostController::class, 'postIndex'])->name('post.postIndex');
 
 Route::middleware('auth', 'verified')->group(function () {
     Route::get('/dashboard', function () {
