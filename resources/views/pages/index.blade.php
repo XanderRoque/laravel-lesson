@@ -46,7 +46,7 @@
                                 <h5 class="card-title">{{ $post->subject }}</h5>
                                 <p><small><b>Author:</b> {{ $post->user->name }}</small></p>
                                 {{ $post->post }}
-                                <p class="border-top mt-4 font-monospace">For your feedback you can email the author on <a href="mailto:{{ $post->user->email }}">{{ $post->user->email }}</a></p>
+                                <p class="border-top mt-4 font-monospace">For your feedback you can email the author on ></a></p>
                         </div>
                     @endforeach
                 @endisset
